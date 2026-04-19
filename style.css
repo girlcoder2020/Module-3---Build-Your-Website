@@ -42,7 +42,7 @@
         cursor: pointer;
     }
 
-    a{
+    a {
         color: black;
         font-size: 24px;
         font-weight: 700;
@@ -62,7 +62,7 @@
         padding-left: 16px;
     }
 
-    .row{
+    .row {
         width: 100%;
         max-width: 1300px;
         display: flex;
@@ -70,7 +70,7 @@
         justify-content: center;
         
     }
-    #About, #Discord, #Contact {
+    #About, #Discord, #Contact, footer {
         padding: 48px 0; /*padding 48 top and bottom, 0 to left and right */
         
     }
@@ -127,4 +127,49 @@
 
     #Discord {
         background-color: #cefeff;
+    }
+
+        /* Contact section
+            
+        */
+
+        #contact {
+            background-color: #dce9ff;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column; /* places the input and button on top of each other */
+            margin: 0 auto; /* centers the form horizontally */
+        }
+
+        input, textarea {
+            padding: 6 px 12px;
+            margin-bottom: 24px;
+            font-size: 20px;
+        }
+
+         /* Footer section
+            
+        */
+    footer {
+        background-color: #aaf5ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo {
+       max-width: 480px;
+       margin-bottom: 16px;
+    }
+
+    .footer__links {
+        margin-bottom: 32px;
+    }
+
+    .footer__link {
+        padding: 0 16px;
     }
