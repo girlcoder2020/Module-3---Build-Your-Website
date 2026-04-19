@@ -174,3 +174,50 @@
     .footer__link {
         padding: 0 16px;
     }
+
+    @media (max-width: 728px) { /* applies the following styles when the screen width is 728px or smaller, i.e small phones, tablets, large smartphone */
+       .row {
+        flex-direction: column; /* stacks the content on top of each other instead of side by side */
+
+        .home__description {
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .home__description--button {
+            max-width: 240px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .subheader {
+            text-align: center;
+            font-size: 28px;
+        }
+       }
+
+       ul {
+        display: none; /* hides the navigation links on smaller screens */
+       }
+     
+       .section__description {
+        flex-direction: column; /* stacks the content on top of each other instead of side by side */
+       }
+
+       .section__description--wrapper {
+        width: 100%;
+       }
+
+       .about__img--wrapper {
+        width: 100%;
+       }
+
+       #Discord .section__description {
+        flex-direction: column-reverse; /* stacks the content on top of each other in reverse order, image will be on top and text will be on bottom */
+       }
+    }
